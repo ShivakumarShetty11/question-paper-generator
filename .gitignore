@@ -45,7 +45,6 @@ env/
 *.sublime-workspace
 
 # Project-specific
-output/
 temp/
 *.log
 fermi.log

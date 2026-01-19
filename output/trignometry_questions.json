@@ -1,0 +1,1482 @@
+[
+  {
+    "pattern_id": 0,
+    "pattern_name": "Basic Problem Solving in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 0,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.672178"
+    }
+  },
+  {
+    "pattern_id": 1,
+    "pattern_name": "Advanced Applications in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 1,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.675174"
+    }
+  },
+  {
+    "pattern_id": 2,
+    "pattern_name": "Graphical Analysis in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 2,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.678188"
+    }
+  },
+  {
+    "pattern_id": 3,
+    "pattern_name": "Computational Problems in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 3,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.681186"
+    }
+  },
+  {
+    "pattern_id": 4,
+    "pattern_name": "Proof-Based Questions in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 4,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.684441"
+    }
+  },
+  {
+    "pattern_id": 5,
+    "pattern_name": "Comparative Analysis in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 5,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.687452"
+    }
+  },
+  {
+    "pattern_id": 6,
+    "pattern_name": "Pattern Recognition in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 6,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.690452"
+    }
+  },
+  {
+    "pattern_id": 7,
+    "pattern_name": "Optimization Problems in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 7,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.696964"
+    }
+  },
+  {
+    "pattern_id": 8,
+    "pattern_name": "Estimation and Approximation in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 8,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.708763"
+    }
+  },
+  {
+    "pattern_id": 9,
+    "pattern_name": "Integration of Concepts in trignometry",
+    "questions": [
+      {
+        "instance_id": 0,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "Calculate the value shown in the trignometry diagram for the given parameters.",
+        "correct_answer": "The calculated value is 5 based on the trignometry formula shown.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,5) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (5,4);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (5,4) circle (2pt) node[above right] {$(4,3)$};\n\\draw[green,fill=green] (3,2.5) circle (2pt) node[above] {trignometry};\n\\node at (3,1) {trignometry Problem 1};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "value": 5
+        }
+      },
+      {
+        "instance_id": 1,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "Compare the two quantities shown in the trignometry diagram and determine which is larger.",
+        "correct_answer": "Quantity A is larger than Quantity B by 3 units in this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (3,3);\n\\draw[red,thick] (4,1) rectangle (6,2);\n\\node at (2,3/2) {A};\n\\node at (5,2/2) {B};\n\\node at (3.5,-0.5) {trignometry Comparison};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "value_a": 3,
+          "value_b": 2
+        }
+      },
+      {
+        "instance_id": 2,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "Identify the pattern shown in the trignometry diagram and predict the next value.",
+        "correct_answer": "The pattern increases by 3 each step, so the next value is 8.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$n$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y in {1/3,2/4,3/5,4/6} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\x};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,dashed] (5,7) circle (2pt);\n\\node[above] at (5,7) {?};\n\\node at (4,-0.5) {trignometry Pattern};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "pattern": 3
+        }
+      },
+      {
+        "instance_id": 3,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "Find the area of the trignometry shape shown in the diagram.",
+        "correct_answer": "The area is 30 square units for this trignometry shape.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) rectangle (6,5);\n\\draw[red,fill=red] (1,1) circle (2pt) node[below left] {$(1,1)$};\n\\draw[red,fill=red] (6,5) circle (2pt) node[above right] {($(6,5)$};\n\\draw[<->,orange,thick] (1,0.5) -- (6,0.5) node[midway,below] {5};\n\\draw[<->,orange,thick] (0.5,1) -- (0.5,5) node[midway,left] {4};\n\\node at (4,-0.5) {trignometry Area};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "width": 5,
+          "height": 4
+        }
+      },
+      {
+        "instance_id": 4,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "A trignometry scenario shows 6 items. If each item costs $7, what is the total cost?",
+        "correct_answer": "Total cost = 6 \u00d7 $7 = $42",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Items};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {Cost};\n\\foreach \\x in {1,2,...,6} {\n    \\draw[blue,fill=blue] (\\x,7) circle (3pt);\n    \\node[below] at (\\x,0) {\\$7};\n}\n\\draw[red,thick] (0.5,0.5) -- (6.5,7.5);\n\\node at (7/2,7/2) [above] {trignometry Word Problem};\n\\node at (4,-0.5) {Total: \\$42};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "items": 6,
+          "cost": 7
+        }
+      },
+      {
+        "instance_id": 5,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "What is the maximum value shown in the trignometry graph?",
+        "correct_answer": "The maximum value is 13 occurring at x = 6.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,14) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{-6*(\\x-6)*(\\x-6)+13});\n\\draw[red,fill=red] (6,13) circle (2pt) node[above] {Max};\n\\draw[dashed,gray] (6,0) -- (6,13);\n\\draw[dashed,gray] (0,13) -- (6,13);\n\\node at (6,-0.5) {6};\n\\node at (-0.5,13) {13};\n\\node at (3,-1) {trignometry Graph};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "max_x": 6,
+          "max_y": 13
+        }
+      },
+      {
+        "instance_id": 6,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "In the trignometry proportion shown, if the first ratio equals 8:7, find the missing value.",
+        "correct_answer": "The missing value is 10.285714285714286 \u2248 10.3",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,8);\n\\draw[red,thick] (4,1) -- (6,?);\n\\node at (2,2) {8:7};\n\\node at (5,2) {?:9};\n\\draw[<->,orange,thick] (1,0.5) -- (3,0.5) node[midway,below] {8};\n\\draw[<->,orange,thick] (1,0.5) -- (1,8) node[midway,left] {7};\n\\draw[<->,orange,thick] (4,0.5) -- (6,0.5) node[midway,below] {?};\n\\draw[<->,orange,thick] (4,0.5) -- (4,9) node[midway,left] {9};\n\\node at (3.5,-0.5) {trignometry Proportion};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "ratio1": 8,
+          "ratio2": 7,
+          "value": 9
+        }
+      },
+      {
+        "instance_id": 7,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "The trignometry shape is transformed as shown. What type of transformation occurred?",
+        "correct_answer": "This is a translation by (8, 9) units in the trignometry context.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {$y$};\n\\draw[blue,thick] (1,1) -- (3,1) -- (3,3) -- cycle;\n\\draw[red,thick] (9,10) -- (11,10) -- (11,12) -- cycle;\n\\draw[->,orange,thick] (2,2) -- (10,11);\n\\node at (2,0.5) {Original};\n\\node at (10,9.5) {Image};\n\\node at (4,-0.5) {trignometry Transformation};\n",
+        "difficulty": "medium",
+        "solvability_check": "valid",
+        "variables": {
+          "dx": 8,
+          "dy": 9
+        }
+      },
+      {
+        "instance_id": 8,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "Estimate the value shown in the trignometry diagram to the nearest whole number.",
+        "correct_answer": "The estimated value is approximately 21 for this trignometry problem.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (7,0) node[right] {$x$};\n\\draw[gray,very thin,->] (0,0) -- (0,8) node[above] {trignometry};\n\\draw[blue,thick,domain=0:6,smooth,variable=\\x] plot ({\\x},{1.4*\\x+8});\n\\draw[red,fill=red] (9,20.6) circle (2pt) node[above] {21};\n\\draw[dashed,gray] (9,0) -- (9,20.6);\n\\draw[dashed,gray] (0,20.6) -- (9,20.6);\n\\node at (9,-0.5) {9};\n\\node at (-0.5,20.6) {21};\n\\node at (3,-1) {trignometry Estimation};\n",
+        "difficulty": "easy",
+        "solvability_check": "valid",
+        "variables": {
+          "estimate": 21
+        }
+      },
+      {
+        "instance_id": 9,
+        "pattern_id": 9,
+        "topic": "trignometry",
+        "question_text": "Solve the multi-step trignometry problem shown in the diagram.",
+        "correct_answer": "The solution involves 10 steps, resulting in 19 as the final answer.",
+        "tikz_code": "\n\\draw[gray,very thin,->] (0,0) -- (8,0) node[right] {Steps};\n\\draw[gray,very thin,->] (0,0) -- (0,6) node[above] {trignometry};\n\\foreach \\x/\\y/\\step in {1/1/Step 1,2/2/Step 2,3/3/Step 3} {\n    \\draw[blue,fill=blue] (\\x,\\y) circle (2pt);\n    \\node[below] at (\\x,0) {\\step};\n    \\node[left] at (0,\\y) {\\y};\n}\n\\draw[red,thick] (1,1) -- (2,2) -- (3,3);\n\\draw[green,fill=green] (6,19) circle (3pt);\n\\node[above] at (6,19) {19};\n\\node at (4,-0.5) {trignometry Multi-step};\n",
+        "difficulty": "hard",
+        "solvability_check": "valid",
+        "variables": {
+          "steps": 10,
+          "result": 19
+        }
+      }
+    ],
+    "topic": "trignometry",
+    "generation_metadata": {
+      "generated_at": "2026-01-18T18:01:59.710763"
+    }
+  }
+]

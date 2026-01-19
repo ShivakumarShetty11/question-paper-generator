@@ -1,0 +1,276 @@
+{
+  "topic": "trignometry",
+  "patterns": [
+    {
+      "pattern_id": 0,
+      "pattern_name": "Basic Problem Solving in trignometry",
+      "diagram_description": "Visual representation of basic trignometry concept",
+      "question_template": "Solve the basic {topic} problem with value {value}.",
+      "variables": [
+        {
+          "name": "value",
+          "type": "int",
+          "min_value": 1.0,
+          "max_value": 10.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "problem value"
+        }
+      ],
+      "difficulty": "easy",
+      "learning_objective": "Apply basic trignometry concepts",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 1,
+      "pattern_name": "Advanced Applications in trignometry",
+      "diagram_description": "Complex diagram showing advanced trignometry relationships",
+      "question_template": "Analyze the advanced {topic} scenario with parameters {param1} and {param2}.",
+      "variables": [
+        {
+          "name": "param1",
+          "type": "int",
+          "min_value": 5.0,
+          "max_value": 15.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "first parameter"
+        },
+        {
+          "name": "param2",
+          "type": "int",
+          "min_value": 3.0,
+          "max_value": 12.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "second parameter"
+        }
+      ],
+      "difficulty": "hard",
+      "learning_objective": "Apply advanced trignometry problem-solving techniques",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 2,
+      "pattern_name": "Graphical Analysis in trignometry",
+      "diagram_description": "Graph or chart showing trignometry data",
+      "question_template": "Interpret the {topic} graph to find the relationship between variables.",
+      "variables": [
+        {
+          "name": "x_value",
+          "type": "int",
+          "min_value": 0.0,
+          "max_value": 20.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "x-coordinate"
+        },
+        {
+          "name": "y_value",
+          "type": "int",
+          "min_value": 0.0,
+          "max_value": 20.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "y-coordinate"
+        }
+      ],
+      "difficulty": "medium",
+      "learning_objective": "Analyze graphical representations in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 3,
+      "pattern_name": "Computational Problems in trignometry",
+      "diagram_description": "Step-by-step computational process for trignometry",
+      "question_template": "Calculate the result using {topic} computational methods with input {input}.",
+      "variables": [
+        {
+          "name": "input",
+          "type": "float",
+          "min_value": 1.0,
+          "max_value": 10.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "input value"
+        }
+      ],
+      "difficulty": "medium",
+      "learning_objective": "Perform calculations in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 4,
+      "pattern_name": "Proof-Based Questions in trignometry",
+      "diagram_description": "Logical diagram showing proof structure for trignometry",
+      "question_template": "Prove the {topic} theorem given conditions {condition1} and {condition2}.",
+      "variables": [
+        {
+          "name": "condition1",
+          "type": "enum",
+          "min_value": null,
+          "max_value": null,
+          "allowed_values": [
+            "A",
+            "B",
+            "C"
+          ],
+          "unit": null,
+          "description": "first condition"
+        },
+        {
+          "name": "condition2",
+          "type": "enum",
+          "min_value": null,
+          "max_value": null,
+          "allowed_values": [
+            "X",
+            "Y",
+            "Z"
+          ],
+          "unit": null,
+          "description": "second condition"
+        }
+      ],
+      "difficulty": "hard",
+      "learning_objective": "Construct logical proofs in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 5,
+      "pattern_name": "Comparative Analysis in trignometry",
+      "diagram_description": "Comparison chart showing different trignometry methods",
+      "question_template": "Compare method A and method B for solving {topic} problems with criteria {criteria}.",
+      "variables": [
+        {
+          "name": "criteria",
+          "type": "enum",
+          "min_value": null,
+          "max_value": null,
+          "allowed_values": [
+            "efficiency",
+            "accuracy",
+            "complexity"
+          ],
+          "unit": null,
+          "description": "comparison criteria"
+        }
+      ],
+      "difficulty": "medium",
+      "learning_objective": "Compare different approaches in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 6,
+      "pattern_name": "Pattern Recognition in trignometry",
+      "diagram_description": "Pattern diagram showing trignometry sequences or relationships",
+      "question_template": "Identify the pattern in the {topic} sequence and predict the next term.",
+      "variables": [
+        {
+          "name": "term_number",
+          "type": "int",
+          "min_value": 1.0,
+          "max_value": 10.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "term position"
+        }
+      ],
+      "difficulty": "easy",
+      "learning_objective": "Recognize patterns in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 7,
+      "pattern_name": "Optimization Problems in trignometry",
+      "diagram_description": "Optimization curve showing maximum/minimum for trignometry",
+      "question_template": "Find the optimal value for {topic} function under constraints {constraint}.",
+      "variables": [
+        {
+          "name": "constraint",
+          "type": "int",
+          "min_value": 5.0,
+          "max_value": 25.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "constraint value"
+        }
+      ],
+      "difficulty": "hard",
+      "learning_objective": "Apply optimization techniques in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 8,
+      "pattern_name": "Estimation and Approximation in trignometry",
+      "diagram_description": "Estimation diagram for trignometry calculations",
+      "question_template": "Estimate the result of the {topic} calculation within {tolerance}% accuracy.",
+      "variables": [
+        {
+          "name": "tolerance",
+          "type": "int",
+          "min_value": 5.0,
+          "max_value": 20.0,
+          "allowed_values": null,
+          "unit": "%",
+          "description": "acceptable tolerance"
+        }
+      ],
+      "difficulty": "easy",
+      "learning_objective": "Develop estimation skills in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    },
+    {
+      "pattern_id": 9,
+      "pattern_name": "Integration of Concepts in trignometry",
+      "diagram_description": "Concept map showing connections in trignometry",
+      "question_template": "Integrate multiple {topic} concepts to solve the complex problem.",
+      "variables": [
+        {
+          "name": "complexity",
+          "type": "int",
+          "min_value": 1.0,
+          "max_value": 5.0,
+          "allowed_values": null,
+          "unit": "",
+          "description": "problem complexity level"
+        }
+      ],
+      "difficulty": "hard",
+      "learning_objective": "Synthesize multiple concepts in trignometry",
+      "image_dependency": "high",
+      "topic_relevance": "high",
+      "diversity_score": "high",
+      "sample_questions": []
+    }
+  ],
+  "generation_timestamp": "2026-01-18T18:01:59.667172",
+  "model_used": "llama-3.1-8b-instant"
+}
